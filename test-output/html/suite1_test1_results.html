@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login Test</h1>
+<p>
+  Test duration: 19.162s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.ComputerPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToComputerPageSuccessfully
+      </td>
+  <td class="duration">
+    0.528s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Getting computer heading [[ChromeDriver: chrome on windows (b5b8e594d42a2e60c017e4fdfd316552)] -&gt; xpath: //h1[normalize-space()=&apos;Computers&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToDesktopsPageSuccessfully
+      </td>
+  <td class="duration">
+    1.130s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CLicking on desktop link [[ChromeDriver: chrome on windows (b716548907b457848433424c11ead9e7)] -&gt; xpath: //a[@title=&apos;Show products in category Desktops&apos;][normalize-space()=&apos;Desktops&apos;]]<br />
+                                Getting desktop title [[ChromeDriver: chrome on windows (b716548907b457848433424c11ead9e7)] -&gt; xpath: //h1[normalize-space()=&apos;Desktops&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.LoginPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  userShouldNavigateToLoginPageSuccessFully
+      </td>
+  <td class="duration">
+    0.531s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on loginButton [[ChromeDriver: chrome on windows (2ee9b72f83a578d05be3391c6c095cfb)] -&gt; xpath: //a[normalize-space()=&apos;Log in&apos;]]<br />
+                                Get welcome message [[ChromeDriver: chrome on windows (2ee9b72f83a578d05be3391c6c095cfb)] -&gt; xpath: //h1[contains(text(),&apos;Welcome, Please Sign In!&apos;)]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    1.145s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"test1@gmail.com", "test123"</span><br />
+    
+            <div class="testOutput">
+                        Click on loginButton [[ChromeDriver: chrome on windows (b4b2ec23dd570aea9156501d4294ac8c)] -&gt; xpath: //a[normalize-space()=&apos;Log in&apos;]]<br />
+                                Enter EmailId test1@gmail.com<br />
+                                Enter Password test123<br />
+                                Click on login [[ChromeDriver: chrome on windows (b4b2ec23dd570aea9156501d4294ac8c)] -&gt; xpath: //button[contains(text(),&apos;Log in&apos;)]]<br />
+                                Get error message [[ChromeDriver: chrome on windows (b4b2ec23dd570aea9156501d4294ac8c)] -&gt; xpath: //div[@class=&apos;message-error validation-summary-errors&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.demo.testsuite.RegisterPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatFirstNameLastNameEmailPasswordAndConfirmPasswordFieldsAreMandatory
+      </td>
+  <td class="duration">
+    0.653s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Click on registration button [[ChromeDriver: chrome on windows (e8ad224ecafcc7eee5223df4857c5422)] -&gt; xpath: //button[@id=&apos;register-button&apos;]]<br />
+                                Get First Name Error [[ChromeDriver: chrome on windows (e8ad224ecafcc7eee5223df4857c5422)] -&gt; id: FirstName-error]<br />
+                                Get Last Name Error [[ChromeDriver: chrome on windows (e8ad224ecafcc7eee5223df4857c5422)] -&gt; id: LastName-error]<br />
+                                Get email error [[ChromeDriver: chrome on windows (e8ad224ecafcc7eee5223df4857c5422)] -&gt; id: Email-error]<br />
+                                Get confirm password error [[ChromeDriver: chrome on windows (e8ad224ecafcc7eee5223df4857c5422)] -&gt; id: ConfirmPassword-error]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToRegisterPageSuccessfully
+      </td>
+  <td class="duration">
+    1.002s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Get registration heading [[ChromeDriver: chrome on windows (403fed9a99a14a46bdfd4ad3af0fe45d)] -&gt; xpath: //h1[normalize-space()=&apos;Register&apos;]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
